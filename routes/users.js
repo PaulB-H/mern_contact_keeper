@@ -23,7 +23,7 @@ router.post(
       return res.status(400).json({ errors: errors.array() });
     }
 
-    res.send("passed");
+    const { name, email, password } = req.body;
   }
 );
 
