@@ -47,7 +47,11 @@ router.post(
 
       await user.save();
 
-      res.send("User saved");
+      const payload = {
+        user: {
+          id: user.id,
+        },
+      };
     } catch (err) {
       console.error(err.message);
       res.status(500).send("Server Error");
