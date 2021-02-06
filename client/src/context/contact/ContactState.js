@@ -40,4 +40,18 @@ const ContactState = (props) => {
   };
 
   const [state, dispatch] = useReducer(contactReducer, initialState);
+
+  // Add Contact
+
+  // Delete Contact
+
+  // Set Current Contact
+
+  // Clear Current Contact
+
+  // Update Contact
+
+  // Filter Contacts
+
+  // Clear Filter
 };
