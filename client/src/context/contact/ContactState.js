@@ -38,4 +38,6 @@ const ContactState = (props) => {
       },
     ],
   };
+
+  const [state, dispatch] = useReducer(contactReducer, initialState);
 };
