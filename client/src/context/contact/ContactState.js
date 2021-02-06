@@ -54,4 +54,16 @@ const ContactState = (props) => {
   // Filter Contacts
 
   // Clear Filter
+
+  return (
+    <ContactContext.Provider
+      value={{
+        contacts: state.contacts,
+      }}
+    >
+      {props.children}
+    </ContactContext.Provider>
+  );
 };
+
+export default ContactState;
