@@ -6,7 +6,13 @@ const Contacts = () => {
 
   const { contacts } = contactContext;
 
-  return <div></div>;
+  return (
+    <Fragment>
+      {contacts.map((contact) => (
+        <h3>{contact.name}</h3>
+      ))}
+    </Fragment>
+  );
 };
 
 export default Contacts;
