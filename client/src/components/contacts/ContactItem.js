@@ -13,7 +13,7 @@ const ContactItem = ({ contact }) => {
             (type === "professional" ? "badge-success" : "badge-primary")
           }
         >
-          {type}
+          {type.charAt(0).toUpperCase() + type.slice(1)}
         </span>
       </h3>
     </div>
