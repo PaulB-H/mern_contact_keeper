@@ -8,6 +8,10 @@ const ContactItem = ({ contact }) => {
 
   const { id, name, email, phone, type } = contact;
 
+  const onDelete = () => {
+    deleteContact(id);
+  };
+
   return (
     <div className="card bg-light">
       <h3 className="text-primary text-left">
@@ -36,7 +40,9 @@ const ContactItem = ({ contact }) => {
       </ul>
       <p>
         <button class="btn btn-dark btn-sm">Edit</button>
-        <button class="btn btn-danger btn-sm">Delete</button>
+        <button class="btn btn-danger btn-sm" onClick={onDelete}>
+          Delete
+        </button>
       </p>
     </div>
   );
