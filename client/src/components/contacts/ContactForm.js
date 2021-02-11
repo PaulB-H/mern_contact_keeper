@@ -4,6 +4,8 @@ import ContactContext from "../../context/contact/contactContext";
 const ContactForm = () => {
   const contactContext = useContext(ContactContext);
 
+  const { addContact, current } = contactContext;
+
   const [contact, setContact] = useState({
     name: "",
     email: "",
