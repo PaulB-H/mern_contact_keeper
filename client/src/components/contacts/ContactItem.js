@@ -30,23 +30,23 @@ const ContactItem = ({ contact }) => {
       <ul className="list">
         {email && (
           <li>
-            <i class="fas fa-envelope"></i> {email}
+            <i className="fas fa-envelope"></i> {email}
           </li>
         )}
         {phone && (
           <li>
-            <i class="fas fa-phone"></i> {phone}
+            <i className="fas fa-phone"></i> {phone}
           </li>
         )}
       </ul>
       <p>
         <button
-          class="btn btn-dark btn-sm"
-          oncClick={() => setCurrent(contact)}
+          className="btn btn-dark btn-sm"
+          onClick={() => setCurrent(contact)}
         >
           Edit
         </button>
-        <button class="btn btn-danger btn-sm" onClick={onDelete}>
+        <button className="btn btn-danger btn-sm" onClick={onDelete}>
           Delete
         </button>
       </p>
