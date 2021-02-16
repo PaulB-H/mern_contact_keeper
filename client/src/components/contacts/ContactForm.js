@@ -31,7 +31,7 @@ const ContactForm = () => {
 
   return (
     <form onSubmit={onSubmit}>
-      <h2 class="text-primary">Add Contact</h2>
+      <h2 className="text-primary">Add Contact</h2>
       <input
         type="text"
         placeholder="Name"
