@@ -32,6 +32,11 @@ export default (state, action) => {
         ...state,
         current: null,
       };
+    case CLEAR_CURRENT:
+      return {
+        ...state,
+        current: null,
+      };
     default:
       return state;
   }
