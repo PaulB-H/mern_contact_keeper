@@ -7,6 +7,10 @@ const Contacts = () => {
 
   const { contacts } = contactContext;
 
+  if (contacts.length === 0) {
+    return <h4>Please add a contact</h4>;
+  }
+
   return (
     <Fragment>
       {contacts.map((contact) => (
