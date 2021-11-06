@@ -4,7 +4,7 @@ const Register = () => {
   const [user, setUser] = useState({
     name: "",
     email: "",
-    passowrd: "",
+    password: "",
     password2: "",
   });
 
