@@ -29,8 +29,6 @@ const AuthState = (props) => {
 
   // Register User
   const register = async (formData) => {
-    // since we are making a post request, and we are sending some data, we need the content type header application/json
-    // with axios we create a config object and then a headers object
     const config = {
       headers: {
         "Content-Type": "application/json",
