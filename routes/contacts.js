@@ -63,9 +63,9 @@ router.put("/:id", auth, async (req, res) => {
   //Build contact object
   const contactFields = {};
   if (name) contactFields.name = name;
-  if (email) contactFields.name = email;
-  if (phone) contactFields.name = phone;
-  if (type) contactFields.name = type;
+  if (email) contactFields.email = email;
+  if (phone) contactFields.phone = phone;
+  if (type) contactFields.type = type;
 
   try {
     let contact = await Contact.findById(req.params.id);
