@@ -2,7 +2,7 @@
 
 <h5><small>Made with:</small><br /> Mongo, Express, React, Node</h5>
 
-<strike><a href="#">live site</a></strike>
+<a href="https://paulbhcontactkeeper.herokuapp.com/" target="_blank">paulbhcontactkeeper.herokuapp.com/</a>
 
 <h2>Description</h2>
 <p>Part 2 of: "React - Front to Back" on Udemy.</p>
